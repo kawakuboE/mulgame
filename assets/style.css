@@ -1,0 +1,403 @@
+/*Base*/
+body {
+    font-family: 'Kaisei Decol', "Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
+    color: #009287;
+    width: 100%;
+}
+
+input {
+    font-family: 'Kaisei Decol', "Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
+    color: #009287;
+    line-height: 230px;
+    width: 280px;
+    height: 260px;
+    text-align: center;
+    font-size: 180px;
+}
+
+
+a {
+    text-decoration: none;
+    color: #009287;
+}
+
+.wrap {
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+@media screen and (max-width:1020px) {
+    .wrap {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    input{
+        line-height: 18vw;
+        width: 20vw;
+        height: 18vw;
+        text-align: center;
+        font-size: 12vw;
+    }
+}
+
+.one {
+    font-size: 70px;
+    text-align: center;
+    padding-top: 15px;
+    background-image: url(./images/lineorenge.png);
+    background-size: 30rem;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    white-space: nowrap;
+}
+
+
+
+.smallline {
+    font-size: 50px;
+}
+
+
+.rui {
+    width: 500px;
+}
+
+.ruibox {
+    text-align: center;
+}
+
+.btn {
+    height: 120px;
+    text-align: center;
+    line-height: 110px;
+    font-size: 65px;
+    background-size: 25rem;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.btn.start {
+    background-image: url(./images/redbutton.png);
+    position: relative;
+
+}
+
+.btnlink.start{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+@media screen and (max-width:1020px) {
+    .one {
+        margin: 0 auto;
+        font-size: 10vw;
+        margin: 0;
+        padding-top: 15px;
+        background-size: 80vw;
+    }
+
+
+
+    .smallline {
+        font-size: 7vw;
+    }
+
+
+    .rui {
+        width: 60vw;
+    }
+
+    .ruibox {
+        text-align: center;
+    }
+
+    .btn {
+        height: 15vw;
+        text-align: center;
+        line-height: 110px;
+        font-size: 8vw;
+        background-size: 50vw;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .btn.start {
+        background-image: url(./images/redbutton.png);
+    }
+
+}
+
+
+/*play*/
+
+.play {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 200px;
+    padding: 100px 0 50px;
+}
+
+.fig {
+    margin: 20px;
+}
+
+#fig1,#fig2{
+    width: 210px;
+    height: 270px;
+    border: none;
+}
+
+.calculus {
+    font-size: 180px;
+}
+
+#answerbox {
+    position: relative;
+    width: 290px;
+    height: 270px;
+    border: 2px solid #009287;
+    border-radius: 10px;
+}
+
+#answer {   
+    border: none;
+    line-height: 230px;
+    width: 280px;
+    height: 260px;
+    text-align: center;
+    color: #ff6347;
+    font-size: 180px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+#correct,
+#wrong {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.btn.judge {
+    background-image: url(./images/yellowbutton.png);
+    position: relative;
+}
+
+.btnlink.judge {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#js-buttonnext,
+#js-buttonjudge {
+    display: none;
+}
+
+@media screen and (max-width:1020px) {
+    .play {
+        display: flex;
+        align-items: center;
+        font-size: 12vw;
+        padding: 10vh 0 3vw;
+    }
+
+    .fig {
+        margin: 2vw;
+    }
+
+    .calculus {
+        font-size: 10vw;
+    }
+
+    #fig1,#fig2{
+        width: 18vw;
+        height: 20vw;
+    }
+
+    #answerbox {
+        position: relative;
+        width: 25vw;
+        height: 22vw;
+        border: 2px solid #009287;
+        border-radius: 10px;
+    }
+
+    #answer {
+        border: none;
+        line-height: 18vw;
+        width: 20vw;
+        height: 18vw;
+        text-align: center;
+        color: #ff6347;
+        font-size: 12vw;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+
+    #correct,
+    #wrong {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #correct>img,
+    #wrong>img {
+        width: 30vw;
+    }
+
+    .btn.judge {
+        background-image: url(./images/yellowbutton.png);
+        position: relative;
+    }
+
+    .btnlink.judge {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .next {
+        display: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+}
+    }
+
+
+/*score*/
+
+.scoreall{
+    display: none;
+}
+
+#result{
+    width: 95px;
+    height: 80px;
+    font-size: 80px;
+    margin: 0;
+    border: none;
+}
+
+.btn.two {
+    display: flex;
+    justify-content: center;
+}
+
+.again,
+.end {
+    height: 120px;
+    width: 400px;
+    text-align: center;
+    line-height: 110px;
+    font-size: 65px;
+    background-size: 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.again {
+    background-image: url(./images/redbutton.png);
+    position: relative;
+}
+
+.end {
+    background-image: url(./images/yellowbutton.png);
+    position: relative;
+}
+
+.btnlink.agein,
+.btnlink.end {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+.titleline {
+    font-size: 70px;
+    margin: 0 auto;
+    text-align: center;
+    width: 600px;
+    /*display: none;*/
+    white-space: nowrap;
+}
+
+
+.ruibox {
+    margin: 0 auto;
+    max-width: 600px;
+    max-height: 500px;
+}
+
+.pattern{
+    display: none;
+    margin: 0 auto;
+}
+
+@media screen and (max-width:1020px) {
+    .wrap_h1 {
+        width: 100%;
+        height: 20vw;
+    }
+    
+    .titleline{
+        margin: 0 auto;
+        font-size: 10vw;
+        padding-top: 15px;
+        width: initial;
+    }
+
+    .again,
+    .end {
+        height: 15vw;
+        width: 45vw;
+        text-align: center;
+        line-height: 15vw;
+        font-size: 8vw;
+        background-size: 45vw;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    #result{
+        font-size: 10vw;
+        width: 11vw;
+        height: 10vw;
+    }
+}
+
+/*end*/
+
+.titleline.end {
+    background-image: none;
+    margin: 0 auto;
+}
+
+@media screen and (max-width:1020px) {
+    h1.titleline.end {
+        font-size: 10vw;
+    }
+}

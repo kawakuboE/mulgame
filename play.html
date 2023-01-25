@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/sanitize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaisei+Decol&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>かけ算画面</title>
+
+</head>
+<body>
+    <div class="wrap" id="playall">
+      <div class="play">
+        <input type="text" id="fig1" maxlength="1">
+        <div class="calculus">×</div>
+        <input type="text" id="fig2" maxlength="1">
+        <div class="calculus">=</div>
+        <div id="answerbox">
+          <input type="number" name="sample" id="answer"  maxlength="2">
+            <div id="correct"><img src="./assets/images/correct.png" width="350" alt="正解"></div>
+            <div id="wrong"><img src="./assets/images/wrong.png" width="350" alt="不正解"></div>
+        </div>
+    </div> 
+    <div class="btn judge" id="js-btn"><a class="btnlink judge" href="" id="js-buttonjudge">はんてい</a><a class="next" href="" id="js-buttonnext">つぎへ</a></div>
+
+  </div>
+
+  <div class="wrap" id="scoreall">
+    <div class="wrap_h1">
+      <h1 class="titleline">まんてん！<span class="smallline">すごい！</span></h1>
+      <h1 class="titleline"><input type="text" id="result" maxlength="2"><span class="smallline">もん！</span>せいかい！</h1>
+      <h1 class="titleline">全問はずれ…<span class="smallline">頑張ろう！</span></h1>
+      
+
+    </div>
+    
+        <div class="ruibox">
+          <img class="rui pattern" src="./assets/images/rui3.png" alt="rui_image">
+          <img class="rui pattern" src="./assets/images/rui1.png" alt="rui_image">
+          <img class="rui pattern" src="./assets/images/rui2.png" alt="rui_image">
+        </div>
+        
+        <div class="btn two">
+          <div class="again">
+            <a class="btnlink again" href="play.html">もう一ど</a>
+          </div>
+          
+          <div class="end">
+            <a class="btnlink end" href="end.html">おわり</a>
+          </div>
+          
+        </div>
+  </div>
+  <script src="./assets/app.js"></script>
+</body>
+</html>
+
