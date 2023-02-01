@@ -156,7 +156,7 @@ a {
 }
 
 #answerbox {
-    /* position: relative; */
+    position: relative;
     width: 290px;
     height: 270px;
     border: 2px solid #009287;
@@ -171,10 +171,10 @@ a {
     text-align: center;
     color: #ff6347;
     font-size: 180px;
-    /* position: absolute;
+    position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); */
+    transform: translate(-50%, -50%);
 }
 
 
@@ -227,7 +227,7 @@ a {
     }
 
     #answerbox {
-        /* position: relative; */
+        position: relative;
         min-width: 25vw;
         width: fit-content;
         min-height: 22vw;
@@ -247,10 +247,10 @@ a {
         text-align: center;
         color: #ff6347;
         font-size: 12vw;
-        /* position: absolute;
+        position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%); */
+        transform: translate(-50%, -50%);
     }
 
 
