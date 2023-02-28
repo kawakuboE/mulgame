@@ -17,6 +17,9 @@ const $ruiImg = document.getElementsByClassName('pattern');
 $buttonJudge.style.display = 'block';
 $scoreAll.style.display = 'none';
 
+//カーソルをアンサーボックスに入れておく
+$answerBox.focus();
+
 
 //ランダム数字を表示
 function random() {
@@ -100,7 +103,7 @@ function branch(){
 };
 
 
-$button.addEventListener('click', (e) => {
+/* $button.addEventListener('click', (e) => {
 
     e.preventDefault();
 
@@ -127,7 +130,46 @@ if (quizIndex < quizEnd) {
         
         
         quizIndex++;
+}); */
+
+//ボタンをクリックした時の処理
+$button.addEventListener('click', (e) => {
+    e.preventDefault();
+    quizPlay();
 });
+
+//Enterを押した時の処理
+window.document.onkeydown = function(event){
+    if (event.key === 'Enter') {
+        quizPlay();
+    }
+};
+
+function quizPlay(){
+
+    if (quizIndex < quizEnd) {
+        
+        //スコア表示
+        let $result = document.getElementById('result');
+        $result.value = branch();
+        //console.log(branch());
+        //console.log($result.value);
+        
+        }
+        else {//問題が終わったら
+            $buttonNext.style.display = 'block';
+    
+            //画面切り替え
+            $playAll.style.display = 'none';
+            $scoreAll.style.display = 'block';
+            resultAll();
+            console.log(totalScore());
+            
+            }
+            
+            
+            quizIndex++;
+};
 
 
 
