@@ -49,6 +49,7 @@ a {
     background-repeat: no-repeat;
     background-position: bottom;
     white-space: nowrap;
+    margin-bottom: 0;
 }
 
 
